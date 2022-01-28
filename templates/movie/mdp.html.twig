@@ -1,0 +1,13 @@
+<php
+{% block body %}
+
+    <h1> entrez votre mot de passe </h1>
+
+{{ form_start(form) }}
+    <button class="btn"> {{ button_label|default('Supprimer') }}</button>
+    {{ form_end(form) }}
+    
+    
+    <a href="{{ path('movie_index') }}">Retour à la liste</a>
+
+{% endblock %}
